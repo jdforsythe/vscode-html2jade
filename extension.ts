@@ -11,7 +11,9 @@ export function activate(context: vscode.ExtensionContext) {
         const convertHtmlOptions = {
             bodyless: true,
             nspaces: textEditor.options.insertSpaces ? textEditor.options.tabSize : undefined,
-            tabs: !textEditor.options.insertSpaces
+            tabs: !textEditor.options.insertSpaces,
+            double: true,
+            noattrcomma: true
         };
 
         textEditor.options.insertSpaces;
